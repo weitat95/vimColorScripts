@@ -1,15 +1,14 @@
-Scripts for Configuring Color Scheme for VIM (UBUNTU): 
+Scripts for Configuring Color Scheme for VIM editor to my prefered settings (UBUNTU): 
 
 Vim Color Scripts
-Scripts generator to configure my prefered color scheme settings for VIM editor in a server
 
 
-################################# WARNING ###################################################
-# SCRIPTS OVERWRITES ANY EXISTING VIM SETTINGS (~/.vimrc ~/.vim/colors will be overwritten) #
-#############################################################################################
+################################# WARNING ########################################################
+# SCRIPTS OVERWRITES ANY EXISTING VIM CONFIGURATION (~/.vimrc ~/.vim/colors will be overwritten) #
+##################################################################################################
 
 usage:
-1. Download Any Vim Color Schemes 
+1. Download any vim color schemes 
 
 2. ./generateScript.sh <directoryToColorSchemeSourceCode> <nameOfColorScheme>
 
@@ -19,9 +18,11 @@ usage:
 	
 	./generatedScripts/gruvboxScript.sh
 
-execute to configure the server to this color
+Copy and execute the script in a server to configure vim configurations in the server. 
 
-SCP SCRIPT
+SCP SCRIPT 
+copy colorscripts to a server
+
 with port 
 ./scpscript.sh ./generatedScripts/papercolorScript.sh user@localhost 2222
 
