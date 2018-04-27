@@ -1,10 +1,12 @@
 Scripts for Configuring Color Scheme for VIM (UBUNTU): 
 
-Use at your own risk.
+Vim Color Scripts
+Scripts generator to configure my prefered color scheme settings for VIM editor in a server
 
-#
-# SCRIPTS OVERWRITES ANY EXISTING VIM SETTINGS (~/.vimrc ~/.vim/colors will be overwritten)
-#
+
+################################# WARNING ###################################################
+# SCRIPTS OVERWRITES ANY EXISTING VIM SETTINGS (~/.vimrc ~/.vim/colors will be overwritten) #
+#############################################################################################
 
 usage:
 1. Download Any Vim Color Schemes 
