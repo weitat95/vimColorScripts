@@ -1,19 +1,3 @@
-#!/bin/bash
-
-#COLORDIR=./papaya
-#COLORNAME=papaya
-NAME="northpole"
-rm ~/.vimrc
-cat > ~/.vimrc << EOF
-syntax on
-colorscheme $NAME
-set number
-EOF
-
-mkdir ~/.vim 
-mkdir ~/.vim/colors
-rm ~/.vim/colors/"$NAME.vim"
-cat > ~/.vim/colors/"$NAME.vim" << EOF
 " Vim color file - northpole
 " Name:       northpole.vim
 " Maintainer: https://github.com/Alvarocz/
@@ -138,4 +122,3 @@ exec "hi htmlArg guifg=". s:white.gui ." guibg=NONE gui=NONE ctermfg=". s:white.
 exec "hi DiffAdd guifg=NONE guibg=". s:green.gui ." ctermbg=". s:green.cterm
 exec "hi DiffChange guifg=NONE guibg=". s:blue.gui ." ctermbg=". s:blue.cterm
 exec "hi DiffDelete guifg=NONE guibg=". s:red.gui ." ctermbg=". s:red.cterm
-EOF

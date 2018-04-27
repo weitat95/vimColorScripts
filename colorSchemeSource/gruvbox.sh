@@ -1,19 +1,3 @@
-#!/bin/bash
-
-#COLORDIR=./papaya
-#COLORNAME=papaya
-NAME="gruvbox"
-rm ~/.vimrc
-cat > ~/.vimrc << EOF
-syntax on
-colorscheme $NAME
-set number
-EOF
-
-mkdir ~/.vim 
-mkdir ~/.vim/colors
-rm ~/.vim/colors/"$NAME.vim"
-cat > ~/.vim/colors/"$NAME.vim" << EOF
 " -----------------------------------------------------------------------------
 " File: gruvbox.vim
 " Description: Retro groove color scheme for Vim
@@ -45,7 +29,7 @@ if !exists('g:gruvbox_bold')
   let g:gruvbox_bold=1
 endif
 if !exists('g:gruvbox_italic')
-  if has('gui_running') || $TERM_ITALICS == 'true'
+  if has('gui_running') " || $TERM_ITALICS == 'true'
     let g:gruvbox_italic=1
   else
     let g:gruvbox_italic=0
@@ -1407,4 +1391,3 @@ endfunction
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
-EOF

@@ -1,19 +1,17 @@
 #!/bin/bash
-
-#COLORDIR=./papaya
-#COLORNAME=papaya
-
-rm ~/.vimrc
-cat > ~/.vimrc << EOF
+NAME="papaya"
+rm ~/.vimrc 2> /dev/null
+cat > ~/.vimrc << EOF 
 syntax on
-colorscheme papaya
+colorscheme $NAME
+set background=dark
 set number
 EOF
 
-mkdir ~/.vim 
-mkdir ~/.vim/colors
-rm ~/.vim/colors/papaya.vim
-cat > ~/.vim/colors/papaya.vim << EOF
+mkdir ~/.vim 2> /dev/null
+mkdir ~/.vim/colors 2> /dev/null
+rm ~/.vim/colors/"$NAME.vim" 2> /dev/null 
+cat > ~/.vim/colors/"$NAME.vim" << 'EOF'
 " -------------------------------------------------------
 " (c) 2018 Henry Newcomer
 " "Papaya" - A Vim color file

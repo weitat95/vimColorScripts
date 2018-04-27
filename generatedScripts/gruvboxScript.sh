@@ -1,20 +1,17 @@
 #!/bin/bash
-
-#COLORDIR=./papaya
-#COLORNAME=papaya
 NAME="gruvbox"
-rm ~/.vimrc
-cat > ~/.vimrc << EOF
+rm ~/.vimrc 2> /dev/null
+cat > ~/.vimrc << EOF 
 syntax on
 colorscheme $NAME
-set number
 set background=dark
+set number
 EOF
 
-mkdir ~/.vim 
-mkdir ~/.vim/colors
-rm ~/.vim/colors/"$NAME.vim"
-cat > ~/.vim/colors/"$NAME.vim" << EOF
+mkdir ~/.vim 2> /dev/null
+mkdir ~/.vim/colors 2> /dev/null
+rm ~/.vim/colors/"$NAME.vim" 2> /dev/null 
+cat > ~/.vim/colors/"$NAME.vim" << 'EOF'
 " -----------------------------------------------------------------------------
 " File: gruvbox.vim
 " Description: Retro groove color scheme for Vim
