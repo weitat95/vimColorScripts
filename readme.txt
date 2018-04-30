@@ -20,8 +20,14 @@ usage:
 
 Copy and execute the script in a server to configure vim configurations in the server. 
 
+-------------------------------------------------------------------------------
+
 SCP SCRIPT 
-copy colorscripts to a server
+
+Copy colorscripts to a server
+
+Usage : 
+	./scpscript.sh <Dir to generated ColorScript> <user@localhost> [PORT]
 
 with port 
 ./scpscript.sh ./generatedScripts/papercolorScript.sh user@localhost 2222
