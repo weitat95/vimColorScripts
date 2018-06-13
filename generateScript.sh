@@ -13,9 +13,11 @@ NAME="$COLORNAME"
 rm ~/.vimrc 2> /dev/null
 cat > ~/.vimrc << EOF 
 syntax on
-colorscheme \$NAME
-set background=dark
-set number
+colorscheme \$NAME 
+set background=dark "background be dark theme" 
+set number "enable line numbers"
+set expandtab "change tabs into spaces"
+set tabstop=2 "4 spaces"
 EOF
 
 mkdir ~/.vim 2> /dev/null
