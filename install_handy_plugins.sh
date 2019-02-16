@@ -26,6 +26,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-surround'
@@ -35,4 +36,14 @@ filetype plugin indent on
 EOF
     echo "so ~/.vim/plugins.vim" >> ~/.vimrc
     vim +PluginInstall +qall
+    echo "map <C-o> :NERDTreeToggle<CR>" >> ~/.vimrc
+    echo "set number" >> ~/.vimrc
+    echo "set expandtab" >> ~/.vimrc
+    echo "set shiftwidth=4" >> ~/.vimrc
+    echo "set softtabstop=4" >> ~/.vimrc
+    echo "map <C-l> :set invnumber<CR>" >> ~/.vimrc
+    echo "map <C-t><up> :tabr<cr>" >> ~/.vimrc
+    echo "map <C-t><down> :tabl<cr>" >> ~/.vimrc
+    echo "map <C-t><left> :tabp<cr>" >> ~/.vimrc
+    echo "map <C-t><right> :tabn<cr>" >> ~/.vimrc
 fi
