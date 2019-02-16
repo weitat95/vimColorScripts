@@ -46,4 +46,8 @@ EOF
     echo "map <C-t><down> :tabl<cr>" >> ~/.vimrc
     echo "map <C-t><left> :tabp<cr>" >> ~/.vimrc
     echo "map <C-t><right> :tabn<cr>" >> ~/.vimrc
+    echo "let g:ale_enabled = 0 \"Disable Ale on default\"" >> ~/.vimrc
+    echo "\"let g:gitgutter_enabled = 0 \" \"Disable GitGutter on Default\"" >>~/.vimrc
+    echo "map <C-a> :ALEToggle <CR>" >> ~/.vimrc
+    echo "map <C-g> :GitGutterToggle <CR>" >> ~/.vimrc
 fi
