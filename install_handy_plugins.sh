@@ -50,4 +50,5 @@ EOF
     echo "\"let g:gitgutter_enabled = 0 \" \"Disable GitGutter on Default\"" >>~/.vimrc
     echo "map <C-a> :ALEToggle <CR>" >> ~/.vimrc
     echo "map <C-g> :GitGutterToggle <CR>" >> ~/.vimrc
+    echo "map ; :Files<CR>" >> ~/.vimrc
 fi
