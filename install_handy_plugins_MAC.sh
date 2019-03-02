@@ -50,27 +50,27 @@ map <C-t><down> :tabl<cr
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr
 
-nnoremap <A-j> :m .+1<CR>== "Alt+j to move lines (or visual block) down"
-nnoremap <A-k> :m .-2<CR>== "Alt+k to move lines (or visual block) up"
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+nnoremap ∆ :m .+1<CR>== "Moving Lines with Alt+j, Alt+k for MAC"
+nnoremap ˚ :m .-2<CR>==
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ˚ <Esc>:m .-2<CR>==gi
+vnoremap ∆ :m '>+1<CR>gv=gv
+vnoremap ˚ :m '<-2<CR>gv=gv
 
-nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR> "Ctrl-j inserts a blank line below the current line."
-nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR> "Ctrl-k inserts a blank line above the current line."
+nnoremap <silent><c-j> :set paste<cr>m`o<esc>``:set nopaste<cr> "ctrl-j inserts a blank line below the current line."
+nnoremap <silent><c-k> :set paste<cr>m`o<esc>``:set nopaste<cr> "ctrl-k inserts a blank line above the current line."
 
-map <C-o> :NERDTreeToggle<CR> "Map Ctrl+o to toggle NERDTree"
+map <c-o> :nerdtreetoggle<cr> "map ctrl+o to toggle nerdtree"
 
-"let g:gitgutter_enabled = 0" "Disable GitGutter on Default"
-map <C-g> :GitGutterToggle <CR> "Ctrl+g to toggle GitGutter"
+"let g:gitgutter_enabled = 0" "disable gitgutter on default"
+map <c-g> :gitguttertoggle <cr> "ctrl+g to toggle gitgutter"
 
-let g:ale_enabled = 0 "Disable Ale on default"
-map <C-a> :ALEToggle <CR> "Ctrl+a to toggle ALE"
+let g:ale_enabled = 0 "disable ale on default"
+map <c-a> :aletoggle <cr> "ctrl+a to toggle ale"
 
-map ; :Files<CR> "; to toggle zfiles"
+map ; :files<cr> "; to toggle zfiles"
 
-EOF
+eof
 
-vim +PluginInstall +qall
+vim +plugininstall +qall
 fi
