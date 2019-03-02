@@ -3,15 +3,15 @@ Scripts for Configuring Color Scheme for VIM editor to my prefered settings (UBU
 Vim Color Scripts
 
 Usage: 
-
+```
 ./reinstall_everything.sh
-
+```
 or
-
+```
 ./generateScript.sh colorSchemeSource/<THEMESOURCECODE> <THEMENAME>
 ./generatedScripts/<THEMENAME>Script.sh
 ./install_handy_plugins.sh
-
+```
 _______________________________________________________________________________
 
 
