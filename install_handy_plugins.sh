@@ -1,4 +1,4 @@
-#!/bin/bash
+#!p Ctrl+o to toggle NERDTree"/bin/bash
 
 GIT=~/.vim/bundle/Vundle.vim
 
@@ -57,8 +57,10 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-nnoremap <silent><C-j> :set paste<CR>m\`o<Esc>\`\`:set nopaste<CR> "Ctrl-j inserts a blank line below the current line."
-nnoremap <silent><C-k> :set paste<CR>m\`O<Esc>\`\`:set nopaste<CR> "Ctrl-k inserts a blank line above the current line."
+nnoremap <silent><C-j> :set paste<CR>m\`o<Esc>\`\`:set nopaste<CR> 
+"Ctrl-j inserts a blank line below the current line."
+nnoremap <silent><C-k> :set paste<CR>m\`O<Esc>\`\`:set nopaste<CR> 
+"Ctrl-k inserts a blank line above the current line."
 
 map <C-o> :NERDTreeToggle<CR> "Map Ctrl+o to toggle NERDTree"
 
@@ -71,6 +73,9 @@ map <C-a> :ALEToggle <CR> "Ctrl+a to toggle ALE"
 "; to toggle fzf"
 map ; :Files<CR> 
 
+"to use Ag for fzf, need to install the_silver_searcher"
+"Maps K to search words under cursor"
+nnoremap <silent> K :Ag <C-R><C-W><CR>
 EOF
 
 vim +PluginInstall +qall
