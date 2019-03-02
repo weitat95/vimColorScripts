@@ -46,9 +46,9 @@ set softtabstop=4
 map <C-l> :set invnumber<cr> "Ctrl+l to toggle line numebrs"
 
 map <C-t><up> :tabr<cr> "Ctrl+t + arrowKeys to navigate through tabs"
-map <C-t><down> :tabl<cr
+map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
-map <C-t><right> :tabn<cr
+map <C-t><right> :tabn<cr>
 
 nnoremap ∆ :m .+1<CR>== "Alt+j to move lines (or visual block) down"
 nnoremap ˚ :m .-2<CR>== "Alt+k to move lines (or visual block) up"
