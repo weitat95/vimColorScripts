@@ -1,4 +1,4 @@
-#!p Ctrl+o to toggle NERDTree"/bin/bash
+#!/bin/bash
 
 GIT=~/.vim/bundle/Vundle.vim
 
