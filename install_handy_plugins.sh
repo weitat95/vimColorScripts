@@ -31,8 +31,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
-Plugin 'tpope/vim-obsession'
-Plugin 'dhruvasagar/vim-prosession'
 call vundle#end()
 filetype plugin indent on
 EOF
